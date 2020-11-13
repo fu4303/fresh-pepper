@@ -1,0 +1,32 @@
+.section {
+   background: none;
+   /* padding: 10px; */
+   display: flex;
+   flex-direction: column;
+   box-sizing: border-box;
+}
+
+.section__header {
+    font-size: 1.3rem;
+    font-weight: 800;
+    background: red;
+    height: 20vh;
+    color: white;
+    padding: 10px;
+    padding-top: 90px;
+    box-sizing: border-box;
+}
+
+.section__item {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.section__image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}

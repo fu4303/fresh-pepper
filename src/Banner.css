@@ -1,0 +1,79 @@
+.banner {
+    display: flex;
+    width: 100vw;
+    height: 75vh;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.banner__movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+
+.banner__movie-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #F9F9F9;
+    margin-bottom: 20px;
+    width: 70vw;
+}
+
+.banner__movie-genres {
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+.banner__movie-genre {
+    margin-right: 10px;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.banner__movie-button {
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    background: red;
+    color: white;
+    border: none;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+}
+
+.banner__movie-button:hover {
+    background: white;
+    color: red;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 700px){
+    .banner {
+        box-sizing: border-box;
+        width: 90%;
+        margin-left: auto;
+        height: 60vh;
+    }
+
+    .banner__movie-name {
+        font-size: 3rem;
+        margin-left: 50px;
+    }
+
+    .banner__movie-button {
+        margin-left: 50px;
+    }
+
+    .banner__movie-genres{
+        margin-left: 50px;
+    }
+}

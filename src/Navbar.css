@@ -1,0 +1,144 @@
+.navbar {
+  display: flex;
+  padding: 10px;
+  background: transparent;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar__red {
+  background: red;
+}
+
+.navbar__brand {
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  display: block;
+  margin: auto;
+  /* text-decoration: none; */
+}
+
+.nav__link {
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  margin: auto;
+}
+
+.nav__link:hover {
+  cursor: pointer;
+}
+
+.navbar__menu--icon {
+  margin-top: 13px;
+  color: white;
+  margin-right: 20px;
+  position: fixed;
+}
+
+.navbar__links-close {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: -100%;
+  top: 0;
+  width: 70%;
+  padding-top: 120px;
+  background: #f9f9f9;
+  height: 100%;
+  align-items: center;
+  transition: all 1s ease-out;
+}
+
+.navbar__links-open {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  width: 70%;
+  padding-top: 120px;
+  background: #f9f9f9;
+  height: 100%;
+  align-items: center;
+  transition: all 1s ease-out;
+}
+
+.navbar__link {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 17px;
+  color: #303030;
+  margin-bottom: 10px;
+}
+
+.navbar__menu-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.navbar__link:hover {
+  cursor: pointer;
+  color: red;
+}
+
+@media screen and (min-width: 700px) {
+  .navbar {
+    background: #f9f9f9;
+    flex-direction: column;
+    width: 10%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar__brand {
+    font-size: 20px;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    background-color: red;
+    height: 10%;
+    align-items: center;
+  }
+
+  .navbar__brand:hover {
+    cursor: pointer;
+  }
+
+  .navbar__menu--icon,
+  .navbar__menu-close {
+    left: -200%;
+  }
+
+  .navbar__links-close {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    background: none;
+    width: fit-content;
+    left: 0;
+  }
+
+  .navbar__link--icon {
+    width: 50px;
+    height: 50px;
+  }
+}
